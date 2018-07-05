@@ -23,7 +23,7 @@ Pod::Spec.new do |s|
   s.watchos.exclude_files = "ReactiveCocoa/Shared/*.{swift}"
   s.module_name = 'ReactiveCocoa'
 
-  s.dependency 'ReactiveSwift', :git => "git@github.com:MrLu/ReactiveSwift.git" 
+  # s.dependency 'ReactiveSwift' #手动导入自己的ReactiveSwift
 
   s.pod_target_xcconfig = { "OTHER_SWIFT_FLAGS[config=Release]" => "$(inherited) -suppress-warnings" }
 end
